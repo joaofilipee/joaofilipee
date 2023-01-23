@@ -18,6 +18,8 @@
     font-size: 19px;
     font-weight: bold;
     color: rgb(219, 216, 216);
+    transition-property: all;
+    transition-duration: .1s;
 }
 
 .name a {
@@ -29,3 +31,8 @@
 .red {
     color: crimson;
 }
+
+.items a:hover {
+    color: rgb(92, 8, 8);
+}
+
