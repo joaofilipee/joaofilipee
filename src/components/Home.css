@@ -2,18 +2,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5em 10%;
-    background-color: rgb(28, 23, 56, 98%);
+    padding: 7.6em 14%;
+    background-color: hsl(232, 25%, 18%, 99%);
 }
 
 .about {
-    font-size: 3.7em;
+    font-size: 3.8em;
     max-width: 600px;
 }
 
 .about, .description {
-    color: rgb(219, 216, 216);
-    font-weight: 500;
+    color: #FCFCFC;
+    font-weight: 400;
 }
 
 .bar {
@@ -23,7 +23,7 @@
 }
 
 .firstball {
-    background-color: rgb(177, 6, 6);
+    background-color: #FF4A57;
 }
 
 .page-location {
@@ -36,8 +36,35 @@
 }
 
 .ball {
-    height: 32px;
-    width: 32px;
-    border: 2px solid rgb(177, 6, 6);
+    height: 25px;
+    width: 25px;
+    border: 2px solid #FF4A57;
     border-radius: 50%;
 }
+
+.description {
+    color: #3C3E4F;
+    font-size: 1.1em;
+    max-width: 300px;
+}
+
+
+@media (max-width: 645px) {
+    .about {
+      font-size: 3em;
+    }
+  }
+
+  @media (max-width: 436px) {
+    .about {
+      font-size: 2.5em;
+    }
+  }
+
+  @media (max-width: 366px) {
+    .about {
+      font-size: 2.2em;
+    }
+  }
+  
+  

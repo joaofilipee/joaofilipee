@@ -6,10 +6,10 @@ const Home = () => {
       <div className="presentation">
 
         <h2 className="about">
-          Olá, eu sou um desenvolvedor Front end
+          Olá, sou um desenvolvedor Front end
         </h2>
         <p className="description">
-          Desenvolvo aplicações web através de código
+          Desenvolvo aplicações web através da programação
         </p>
 
       </div>
