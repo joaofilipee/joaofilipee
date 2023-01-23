@@ -1,15 +1,16 @@
 .nav-bar {
     background-color: rgb(5, 1, 36);
-    height: 70px;
+    height: 75px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 9em;
     align-items: center;
 }
 
 .items {
     display: flex;
     justify-content: space-around;
-    width: 20em;
+    width: 25em;
 }
 
 .items a {
