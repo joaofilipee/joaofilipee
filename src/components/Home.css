@@ -1,8 +1,40 @@
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5em 10%;
+    background-color: rgb(28, 23, 56, 98%);
+}
+
 .about {
-    font-size: 3.5em;
+    font-size: 3.7em;
     max-width: 600px;
 }
 
-.presentation {
-    padding: 5em 9em;
+.about, .description {
+    color: rgb(219, 216, 216);
+    font-weight: 500;
+}
+
+.bar {
+    background-color: gray;
+    height: 3.5em;
+    width: 2px;
+}
+
+.firstball {
+    background-color: rgb(177, 6, 6);
+}
+
+.page-location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ball {
+    height: 32px;
+    width: 32px;
+    border: 2px solid rgb(177, 6, 6);
+    border-radius: 50%;
 }

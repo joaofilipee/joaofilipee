@@ -8,7 +8,7 @@ const Navbar = () => {
             <NavLink to="/">J<span className="red">o</span>ão</NavLink>
         </div>
         <div className="items">
-        <NavLink>Home</NavLink>
+        <NavLink to="/">Home</NavLink>
         <NavLink>Projetos</NavLink>
         <NavLink>Contato</NavLink>
         <NavLink>Skills</NavLink>
