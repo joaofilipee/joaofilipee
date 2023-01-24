@@ -12,6 +12,7 @@ const Home = () => {
           Desenvolvo aplicações web através da programação
         </p>
 
+      <button className="btn">Download CV</button>
       </div>
       
       <div className="page-location">
@@ -25,6 +26,8 @@ const Home = () => {
         <div className="ball thirdball"></div>
 
       </div>
+
+
     </div>
   )
 }

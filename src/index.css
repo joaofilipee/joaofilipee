@@ -6,3 +6,15 @@
   font-family: 'Poppins', sans-serif;
   font-family: 'Roboto', sans-serif;
 }
+
+.btn {
+  margin-top: 2.5em;
+  height: 53px;
+  width: 225px;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: #FF4A57;
+  border-radius: 3px;
+  border: 0px;
+  color: #FCFCFC;
+}
