@@ -1,0 +1,28 @@
+#skill {
+    padding: 0 14%;
+    margin-top: 30em;
+}
+
+#skill h1 {
+    color: #FF4A57;
+    font-size: 3.8em;
+    display: inline;
+}
+
+h1 span {
+    border-bottom: 5px solid #FF4A57;
+    padding-bottom: 5px;
+}
+
+.skills {
+    margin-top: 30px;
+    display: flex;
+    gap: 6em;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 240px;
+    height: 220px;
+    background-color: #343E4F;
+}
