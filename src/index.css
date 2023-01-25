@@ -17,4 +17,12 @@
   border-radius: 3px;
   border: 0px;
   color: #FCFCFC;
+
+  transition-property: all;
+  transition-duration: 0.2s;
+}
+
+.btn:hover{
+  cursor: pointer;
+  opacity: 0.8;
 }

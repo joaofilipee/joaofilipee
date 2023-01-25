@@ -33,14 +33,14 @@ const Skills = () => {
 
               <h4 className="technology-name">Github</h4>
               <p className="technology-description">
-                É uma plataforma que permite hospedagem prática de código-fonte e arquivos em nuvem.
+                É uma plataforma que nos permite hospedagem prática de código-fonte e arquivos em nuvem.
               </p>
             </div>
 
             <div className="card">
               <div className="icon js"> <SiJavascript /> </div>
 
-              <h4 className="technology-name">Javascript</h4>
+              <h4 className="technology-name">JavaScript</h4>
               <p className="technology-description">JavaScript é uma linguagem de programação que permite a você implementar itens complexos em páginas web.</p>
             </div>
 
@@ -48,7 +48,7 @@ const Skills = () => {
               <div className="icon html"> <DiHtml5 /> </div>
 
               <h4 className="technology-name">HTML</h4>
-              <p className="technology-description">HTML é uma linguagem de marcação utilizada na construção de páginas na Web.</p>
+              <p className="technology-description">HTML é uma linguagem de marcação de texto que utilizamos para a construção de páginas na Web.</p>
             </div>
 
             <div className="card">
