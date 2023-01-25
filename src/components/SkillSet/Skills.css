@@ -1,15 +1,15 @@
 #skill {
     padding: 0 14%;
-    margin-top: 30em;
+    margin-top: 27em;
 }
 
-#skill h1 {
+#skill .title {
     color: #FF4A57;
-    font-size: 3.8em;
+    font-size: 3.5em;
     display: inline;
 }
 
-h1 span {
+.title span {
     border-bottom: 5px solid #FF4A57;
     padding-bottom: 5px;
 }
@@ -22,7 +22,59 @@ h1 span {
 }
 
 .card {
-    width: 240px;
-    height: 220px;
-    background-color: #343E4F;
+    width: 250px;
+    height: 240px;
+    background-color: #2B2D41;
+    border-radius: 4px;
+
+    padding: 2em 1em 1.8em 1.3em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 17px;
+
+    
 }
+.technology-name, .technology-description {
+    color: #FCFCFC;
+}
+
+.technology-description {
+    opacity: .8;
+}
+
+.icon {
+    font-size: 50px;
+    position: relative;
+    left: -5px;
+    height: 50px;
+}
+
+.react {
+    color: #5ED3F3;
+}
+
+.git {
+    color: #E84D31;
+}
+
+.html {
+    color: #DD4B25;
+}
+
+.css {
+    color: #249BD6;
+}
+
+.js {
+    font-size: 42px;
+    left: 0;
+    top: -5px;
+    color: #EFD81D;
+
+    display: flex;
+    align-items: flex-end;
+}
+
+
