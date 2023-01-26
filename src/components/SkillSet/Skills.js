@@ -4,7 +4,9 @@ import "./Skills.css"
 import { DiReact, DiGit, DiGithubBadge, DiHtml5, DiCss3 } from "react-icons/di"
 import { SiJavascript } from "react-icons/si"
 
+
 const Skills = () => {
+
   return (
     <div id="skill">
         <h1 className="title"><span>Skill</span>-Set</h1>
