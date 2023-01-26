@@ -4,12 +4,38 @@ import "./Skills.css"
 import { DiReact, DiGit, DiGithubBadge, DiHtml5, DiCss3 } from "react-icons/di"
 import { SiJavascript } from "react-icons/si"
 
+// hooks
+import { useRef, useState, useLayoutEffect } from "react"
 
 const Skills = () => {
 
+  const [scroll, setScroll] = useState(0)
+  const titleRef = useRef(null)
+
+  const cards = document.querySelectorAll(".card")
+
+  const handleScroll = event => {
+    
+    if(scroll > window.scrollY && scroll < window.scrollY + window.screen.height - 300) {
+      cards.forEach(card => card.classList.add("appearing"))
+    }
+    
+  }
+
+  useLayoutEffect(() => {
+    setScroll(titleRef.current.offsetTop)
+
+    if(scroll > 0) {
+      window.addEventListener("scroll", handleScroll)
+    }
+  })
+
+  
+  
+
   return (
     <div id="skill">
-        <h1 className="title"><span>Skill</span>-Set</h1>
+        <h1 ref={titleRef} className="title"><span>Skill</span>-Set</h1>
         <section className="skills">
 
             <div className="card">

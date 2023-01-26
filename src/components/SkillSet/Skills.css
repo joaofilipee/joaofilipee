@@ -22,7 +22,7 @@
 }
 
 .card {
-    width: 250px;
+    width: 240px;
     height: 240px;
     background-color: #2B2D41;
     border-radius: 4px;
@@ -34,8 +34,21 @@
     justify-content: flex-end;
     gap: 17px;
 
+    opacity: 0;
+    margin-top: -4em;
+
+    transition-property: all;
+    transition-duration: 2s;
+
     
 }
+
+.appearing {
+    opacity: 1;
+    margin-top: 0px;
+}
+
+
 .technology-name, .technology-description {
     color: #FCFCFC;
 }
@@ -77,5 +90,4 @@
     display: flex;
     align-items: flex-end;
 }
-
 
