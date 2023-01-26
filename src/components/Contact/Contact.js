@@ -63,11 +63,13 @@ const Contact = () => {
             <input type="text" placeholder="Message" value={message} onChange={e => setMessage(e.target.value)} />
 
             {loading && <button className="btn submit" disabled>Aguarde...</button>}
+            
             {!loading && sucess ?
             (<button className="btn submit" disabled>E-mail enviado com sucesso!</button>)
             :
             (<button className="btn submit">Enviar</button>)
             }
+
             {error && <button className="btn submit" disabled>Ocorreu um erro.</button>}
             
 

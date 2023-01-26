@@ -1,0 +1,46 @@
+#footer {
+    margin-top: 10em;
+
+    background-color: #212336;
+    height: 88px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 14%;
+    align-items: center;
+}
+
+.copyright-icon {
+    position: relative;
+    top: 3px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright p {
+    font-size: 18px;
+    color: rgb(219, 216, 216);
+}
+
+.socials {
+    display: flex;
+    gap: 30px;
+}
+
+.socials a {
+    font-size: 45px;
+}
+
+.gitHub {
+    color: black;
+}
+
+.linkedin {
+    color: black;
+}
+
+.email {
+    color: black;
+}
