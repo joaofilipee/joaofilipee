@@ -1,9 +1,14 @@
 #home {
+
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 7.6em 14%;
     background-color: hsl(232, 25%, 18%, 99%);
+}
+
+.presentation {
+  padding-top: 70px;
 }
 
 .about {
