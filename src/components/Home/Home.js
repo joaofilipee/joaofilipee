@@ -3,7 +3,7 @@ import "./Home.css"
 // hooks
 import { useRef, useLayoutEffect, useState } from "react"
 
-let balls = document.querySelectorAll(".ball")
+export let balls = document.querySelectorAll(".ball")
 
 const Home = () => {
 

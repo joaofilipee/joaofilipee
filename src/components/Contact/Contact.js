@@ -3,9 +3,11 @@ import "./Contact.css"
 // email API
 import emailjs from "@emailjs/browser"
 
+// import location
+import { balls } from "../Home/Home"
 
 // hooks
-import { useState } from "react"
+import { useState, useRef,useLayoutEffect } from "react"
 
 const Contact = () => {
 
@@ -18,6 +20,8 @@ const Contact = () => {
    
     const [sendBtn, setSendBtn] = useState(true)
 
+    const distanceRef = useRef(null)
+
     const resetEmailStatus = () => {
 
         setTimeout(() => {
@@ -27,6 +31,19 @@ const Contact = () => {
         },2000)
         
     }
+
+    const handleContactScroll = event => {
+        if(distanceRef.current.offsetTop > window.scrollY && distanceRef.current.offsetTop < window.scrollY + window.screen.height - 200 ){
+            balls.forEach(ball => ball.style.backgroundColor = "transparent")
+            balls[2].style.backgroundColor = "#FF4A57"
+        }
+    }
+
+    useLayoutEffect(() => {
+        if(distanceRef){
+            window.addEventListener("scroll", handleContactScroll)
+        }
+    })
 
     const sendEmail = async(e) => {
         e.preventDefault()
@@ -62,7 +79,7 @@ const Contact = () => {
 
   return (
     <div id="contact">
-        <h1 className="contactTitle">Connect with me</h1>
+        <h1 ref={distanceRef} className="contactTitle">Connect with me</h1>
         <form onSubmit={sendEmail}>
             <input type="email" placeholder="E-mail" value={email} onChange={e => setEmail(e.target.value)} />
             <input type="text" placeholder="Mensagem" value={message} onChange={e => setMessage(e.target.value)} />
