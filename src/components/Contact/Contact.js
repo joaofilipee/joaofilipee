@@ -16,17 +16,22 @@ const Contact = () => {
     const [sucess, setSucess] = useState(false)
     const [error, setError] = useState(false)
    
+    const [sendBtn, setSendBtn] = useState(true)
+
     const resetEmailStatus = () => {
 
         setTimeout(() => {
             setSucess(false)
             setError(false)
+            setSendBtn(true)
         },2000)
         
     }
 
     const sendEmail = async(e) => {
         e.preventDefault()
+
+        setSendBtn(false)
 
         setLoading(true)
         if(!email || !message) {
@@ -62,18 +67,13 @@ const Contact = () => {
             <input type="email" placeholder="E-mail" value={email} onChange={e => setEmail(e.target.value)} />
             <input type="text" placeholder="Mensagem" value={message} onChange={e => setMessage(e.target.value)} />
 
-            {loading && <button className="btn submit" disabled>Aguarde...</button>}
+            {loading && <button className="btn"disabled>Aguarde...</button>}
             
-            {!loading && sucess ?
-            (<button className="btn submit" disabled>E-mail enviado com sucesso!</button>)
-            :
-            (<button className="btn submit">Enviar</button>)
-            }
+            {sendBtn && <button className="btn">Enviar</button>}
 
-            {error && <button className="btn submit" disabled>Ocorreu um erro.</button>}
-            
+            {sucess && <button className="btn" disabled>E-mail enviado com sucesso!</button>}
 
-
+            {error && <button className="btn" disabled>Ocorreu um erro.</button>}
             
         </form>
     </div>
