@@ -40,6 +40,9 @@
     width: 25px;
     border: 2px solid #FF4A57;
     border-radius: 50%;
+
+    transition-property: all;
+    transition-duration: 0.5s;
 }
 
 .description {

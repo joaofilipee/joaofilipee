@@ -1,8 +1,34 @@
 import "./Home.css"
 
+// hooks
+import { useRef, useLayoutEffect, useState } from "react"
+
+let balls = document.querySelectorAll(".ball")
 
 const Home = () => {
 
+  const [downloadBtnPosition, setDownloadBtnPosition] = useState("")
+  const downloadBtn = useRef(null)
+
+  const handleHomeScroll = (e) => {
+    if(downloadBtnPosition > window.scrollY){
+      balls.forEach(ball => {
+        ball.style.backgroundColor = "transparent"
+      })
+
+      balls[0].style.backgroundColor = "#FF4A57"
+    }
+
+  }
+
+  useLayoutEffect(() => {
+    if(downloadBtn) {
+      setDownloadBtnPosition(downloadBtn.current.offsetTop)
+
+      window.addEventListener("scroll", handleHomeScroll)
+      balls = document.querySelectorAll(".ball")
+  }
+})
 
   return (
     <div id="home">
@@ -15,7 +41,7 @@ const Home = () => {
           Desenvolvo aplicações web através da programação
         </p>
 
-      <button className="btn">Download CV</button>
+      <button ref={downloadBtn} className="btn">Download CV</button>
       </div>
       
       <div className="page-location">

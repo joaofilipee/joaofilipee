@@ -14,10 +14,18 @@ const Skills = () => {
 
   const cards = document.querySelectorAll(".card")
 
-  const handleScroll = event => {
+  // location
+  const balls = document.querySelectorAll(".ball")
+
+  const handleSkillScroll = event => {
     
     if(scroll > window.scrollY && scroll < window.scrollY + window.screen.height - 300) {
       cards.forEach(card => card.classList.add("appearing"))
+
+      balls.forEach(ball => {
+        ball.style.backgroundColor = "transparent"
+      })
+      balls[1].style.backgroundColor = "#FF4A57"
     }
     
   }
@@ -26,7 +34,7 @@ const Skills = () => {
     setScroll(titleRef.current.offsetTop)
 
     if(scroll > 0) {
-      window.addEventListener("scroll", handleScroll)
+      window.addEventListener("scroll", handleSkillScroll)
     }
   })
 
@@ -35,7 +43,7 @@ const Skills = () => {
 
   return (
     <div id="skill">
-        <h1 ref={titleRef} className="title"><span>Skill</span>-Set</h1>
+        <h1 id="skills" ref={titleRef} className="title"><span>Skill</span>-Set</h1>
         <section className="skills">
 
             <div className="card">

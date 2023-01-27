@@ -60,7 +60,7 @@ const Contact = () => {
         <h1 className="contactTitle">Connect with me</h1>
         <form onSubmit={sendEmail}>
             <input type="email" placeholder="E-mail" value={email} onChange={e => setEmail(e.target.value)} />
-            <input type="text" placeholder="Message" value={message} onChange={e => setMessage(e.target.value)} />
+            <input type="text" placeholder="Mensagem" value={message} onChange={e => setMessage(e.target.value)} />
 
             {loading && <button className="btn submit" disabled>Aguarde...</button>}
             
