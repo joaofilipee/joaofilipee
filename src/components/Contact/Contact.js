@@ -7,7 +7,7 @@ import emailjs from "@emailjs/browser"
 import { balls } from "../Home/Home"
 
 // hooks
-import { useState, useRef,useLayoutEffect } from "react"
+import { useState, useRef, useLayoutEffect } from "react"
 
 const Contact = () => {
 
