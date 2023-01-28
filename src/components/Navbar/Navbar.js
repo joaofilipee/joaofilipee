@@ -3,11 +3,22 @@ import "./Navbar.css"
 // hooks
 import { NavLink } from "react-router-dom"
 
-
 // icons
 import { AiOutlineMenu } from "react-icons/ai"
 
 const Navbar = () => {
+
+  const openOrCloseNavbar = (e) => {
+    const mobileNavbar = e.target.parentNode.parentNode.parentNode.parentNode
+    const navbarContent = e.target.parentNode.parentNode.parentNode
+    
+
+    mobileNavbar.classList.toggle("opened")
+
+    navbarContent.classList.remove("opened")
+    
+  }
+
   return (
     <nav className="nav-bar">
         <div className="computer-navbar">
@@ -28,8 +39,8 @@ const Navbar = () => {
             <div className="name">
                 <NavLink to="/">J<span className="red">o</span>ão</NavLink>
             </div>
-            <div>
-                <AiOutlineMenu className="menu" />
+            <div className="menu-div" >
+                <button onClick={openOrCloseNavbar}> <AiOutlineMenu className="menu"/> </button>
             </div>
           </div>
 
