@@ -88,6 +88,10 @@
     .about {
       font-size: 2.5em;
     }
+    .ball {
+      height: 23px;
+      width: 23px;
+    }
 
     .btn {
       width: 170px;

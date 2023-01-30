@@ -2,7 +2,7 @@ import "./Navbar.css"
 
 // hooks
 import { NavLink } from "react-router-dom"
-import { useRef, useEffect } from "react"
+import { useRef } from "react"
 
 // icons
 import { AiOutlineMenu } from "react-icons/ai"
@@ -13,7 +13,6 @@ const Navbar = () => {
 
   const openOrCloseNavbar = (e) => {
     navbar.current.classList.toggle("opened")
-    
   }
 
   return (
@@ -47,10 +46,10 @@ const Navbar = () => {
           <div className="mobile-navbar-links">
 
             <div className="mobile-items">
-                <NavLink to="/"> <span className="red">H</span>ome</NavLink>
-                <a href="#skills"><span className="red">S</span>kills</a>
-                <NavLink to="/projects"><span className="red">P</span>rojetos</NavLink>
-                <a href="#contact"><span className="red">C</span>ontato</a>
+                <NavLink onClick={openOrCloseNavbar} to="/"> <span className="red">H</span>ome</NavLink>
+                <a onClick={openOrCloseNavbar} href="#skills"><span className="red">S</span>kills</a>
+                <NavLink onClick={openOrCloseNavbar} to="/projects"><span className="red">P</span>rojetos</NavLink>
+                <a onClick={openOrCloseNavbar} href="#contact"><span className="red">C</span>ontato</a>
             </div>
 
           </div>

@@ -91,3 +91,38 @@
     align-items: flex-end;
 }
 
+@media (max-width: 370px){
+    #skill .title {
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 799px) {
+    .skills {
+        gap: 3em;
+    }
+}
+
+@media (max-width: 734px) {
+    .skills {
+        gap: 2em;
+    }
+}
+
+@media (max-width: 711px) {
+    .skills {
+        gap: 1em;
+    }
+}
+
+@media (max-width: 688px) {
+    .skills {
+        justify-content: center;
+    }
+    #skill {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+}

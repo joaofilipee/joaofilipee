@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <div id="footer">
         <div className="copyright">
-            <p>Copyright <AiOutlineCopyrightCircle className="copyright-icon" /> </p>
+            <p>Copyright</p>
         </div>
 
         <div className="socials">
