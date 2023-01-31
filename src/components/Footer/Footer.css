@@ -56,3 +56,10 @@
     }
     
 }
+
+@media (min-width: 775px) {
+    .socials {
+        gap: 50px;
+        justify-content: center;
+    }
+}

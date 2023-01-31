@@ -104,3 +104,9 @@
       font-size: 2.2em;
     }
   }
+
+@media (min-width: 681px) {
+  .page-location {
+    height: 80%;
+  }
+}

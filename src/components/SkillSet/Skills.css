@@ -9,11 +9,6 @@
     display: inline;
 }
 
-.title span {
-    border-bottom: 5px solid #FF4A57;
-    padding-bottom: 5px;
-}
-
 .skills {
     margin-top: 30px;
     display: flex;

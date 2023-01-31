@@ -33,10 +33,12 @@ const Contact = () => {
     }
 
     const handleContactScroll = event => {
+        
         if(distanceRef.current.offsetTop > window.scrollY && distanceRef.current.offsetTop < window.scrollY + window.screen.height - 200 ){
             balls.forEach(ball => ball.style.backgroundColor = "transparent")
             balls[2].style.backgroundColor = "#FF4A57"
         }
+        
     }
 
     useLayoutEffect(() => {
