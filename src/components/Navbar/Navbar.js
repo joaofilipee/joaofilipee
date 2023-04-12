@@ -3,17 +3,25 @@ import "./Navbar.css"
 // hooks
 import { NavLink } from "react-router-dom"
 import { useRef } from "react"
+import { useNavigate } from "react-router-dom"
 
 // icons
 import { AiOutlineMenu } from "react-icons/ai"
 
 const Navbar = () => {
 
+  const navigate = useNavigate()
+
   const navbar = useRef(null)
 
   const openOrCloseNavbar = (e) => {
     navbar.current.classList.toggle("opened")
   }
+
+  const navigateToSkillsOrContact = () => {
+    navigate("/")
+  }
+
 
   return (
     <nav className="nav-bar">
@@ -23,9 +31,9 @@ const Navbar = () => {
           </div>
           <div className="items">
             <NavLink to="/">Home</NavLink>
-            <a href="#skills">Skills</a>
+            <a onClick={navigateToSkillsOrContact} href="#skills">Skills</a>
             <NavLink to="/projects">Projetos</NavLink>
-            <a href="#contact">Contato</a>
+            <a onClick={navigateToSkillsOrContact} href="#contact">Contato</a>
           </div>
         </div>
 
@@ -47,9 +55,17 @@ const Navbar = () => {
 
             <div className="mobile-items">
                 <NavLink onClick={openOrCloseNavbar} to="/"> <span className="red">H</span>ome</NavLink>
-                <a onClick={openOrCloseNavbar} href="#skills"><span className="red">S</span>kills</a>
+
+                <a onClick={() => { 
+                  openOrCloseNavbar()
+                  navigateToSkillsOrContact()
+                 }} href="#skills"><span className="red">S</span>kills</a>
+
                 <NavLink onClick={openOrCloseNavbar} to="/projects"><span className="red">P</span>rojetos</NavLink>
-                <a onClick={openOrCloseNavbar} href="#contact"><span className="red">C</span>ontato</a>
+                <a onClick={() => {
+                  openOrCloseNavbar()
+                  navigateToSkillsOrContact()
+                }} href="#contact"><span className="red">C</span>ontato</a>
             </div>
 
           </div>

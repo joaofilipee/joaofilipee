@@ -34,9 +34,11 @@ const Contact = () => {
 
     const handleContactScroll = event => {
         
-        if(distanceRef.current.offsetTop > window.scrollY && distanceRef.current.offsetTop < window.scrollY + window.screen.height - 200 ){
-            balls.forEach(ball => ball.style.backgroundColor = "transparent")
-            balls[2].style.backgroundColor = "#FF4A57"
+        if(distanceRef.current) {
+            if(distanceRef.current.offsetTop > window.scrollY && distanceRef.current.offsetTop < window.scrollY + window.screen.height - 200 ){
+                balls.forEach(ball => ball.style.backgroundColor = "transparent")
+                balls[2].style.backgroundColor = "#FF4A57"
+            }
         }
         
     }
@@ -45,7 +47,7 @@ const Contact = () => {
         if(distanceRef){
             window.addEventListener("scroll", handleContactScroll)
         }
-    })
+    },[])
 
     const sendEmail = async(e) => {
         e.preventDefault()

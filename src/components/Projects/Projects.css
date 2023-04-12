@@ -8,11 +8,14 @@
     font-size: 2.5em;
 }
 
+
 ul {
     list-style: none;
     margin-top: 3em;
 
     display: flex;
+    flex-wrap: wrap;
+    gap: 3em;
 }
 
 li {
@@ -35,6 +38,7 @@ li {
 
 .projectImg {
     width: 15rem;
+    height: 150px;
 }
 
 a {
@@ -45,3 +49,25 @@ a {
     align-items: center;
 }
 
+/* Responsivity */
+
+@media (max-width: 325px) {
+    #projects {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    ul {
+        justify-content: center;
+    }
+    li {
+        align-items: center;
+    }
+}
+
+@media (max-width: 239px) {
+    .projectImg {
+        display: none;
+    }
+}

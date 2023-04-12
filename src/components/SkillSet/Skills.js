@@ -38,9 +38,6 @@ const Skills = () => {
     }
   })
 
-  
-  
-
   return (
     <div id="skill">
         <h1 id="skills" ref={titleRef} className="title"><span>Skill</span>-Set</h1>
