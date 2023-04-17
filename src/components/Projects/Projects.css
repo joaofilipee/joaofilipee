@@ -24,6 +24,14 @@ li {
     display: flex;
     flex-direction: column;
     gap: 15px;
+
+    justify-content: space-between;
+}
+
+.title_and_description {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3em;
 }
 
 .project-title {
