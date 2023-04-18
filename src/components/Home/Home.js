@@ -2,6 +2,7 @@ import "./Home.css"
 
 // hooks
 import { useRef, useLayoutEffect, useState } from "react"
+import { Link } from "react-router-dom"
 
 export let balls = document.querySelectorAll(".ball")
 
@@ -41,7 +42,10 @@ const Home = () => {
           Desenvolvo aplicações web através da programação
         </p>
 
-      <button ref={downloadBtn} className="btn">Download CV</button>
+        <a href="https://drive.google.com/u/0/uc?id=1lXyp63dGywNLt-gncwoLiMMFL_fZuSVh&export=download" download>
+          <button ref={downloadBtn} className="btn">Download CV</button>
+        </a>
+
       </div>
       
       <div className="page-location">
