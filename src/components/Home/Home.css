@@ -62,6 +62,12 @@
 }
 
 
+@media (max-width: 1075px) {
+  .page-location {
+    top: 17em;
+  }
+}
+
 @media (max-width: 645px) {
     .about {
       font-size: 3em;
