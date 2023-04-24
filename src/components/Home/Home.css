@@ -102,6 +102,10 @@
       width: 170px;
       font-size: 13px;
     }
+
+    .page-location {
+      top: 14em;
+    }
   }
 
   @media (max-width: 350px) {

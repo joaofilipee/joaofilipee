@@ -42,7 +42,7 @@ const Home = () => {
           Desenvolvo aplicações web através da programação
         </p>
 
-        <a href="https://drive.google.com/u/0/uc?id=1lXyp63dGywNLt-gncwoLiMMFL_fZuSVh&export=download" download>
+        <a href="https://drive.google.com/u/0/uc?id=1lXyp63dGywNLt-gncwoLiMMFL_fZuSVh&export=download" download="curriculo.docx">
           <button ref={downloadBtn} className="btn">Download CV</button>
         </a>
 
