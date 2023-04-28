@@ -12,7 +12,7 @@ const Footer = () => {
         </div>
 
         <div className="socials">
-            <a href="mailto:joao20filipe@gmail.com"> <AiOutlineMail className="email" /> </a>
+            <a href="mailto:joao1filipe@outlook.com"> <AiOutlineMail className="email" /> </a>
 
             <a href="https://github.com/joaofilipee?tab=repositories" target="_blank"> <DiGithubBadge className="gitHub" /> </a>
 
