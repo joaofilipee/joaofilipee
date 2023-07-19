@@ -2,7 +2,7 @@ import "./Skills.css"
 
 // Icons
 import { DiReact, DiGit, DiGithubBadge, DiHtml5, DiCss3 } from "react-icons/di"
-import { SiJavascript } from "react-icons/si"
+import { SiJavascript, SiTypescript } from "react-icons/si"
 
 // hooks
 import { useRef, useState, useLayoutEffect } from "react"
@@ -54,6 +54,13 @@ const Skills = () => {
             </div>
 
             <div className="card">
+              <div className="icon ts"> <SiTypescript /> </div>
+
+              <h4 className="technology-name">Typescript</h4>
+              <p className="technology-description">Typescript é um superset de Javascript para ajudar o desenvolvimento de softwares adicionando tipagem estática.</p>
+            </div>
+
+            <div className="card">
                 <div className="icon git"><DiGit /></div>
               
                 <h4 className="technology-name">Controle de versões Git</h4>
@@ -90,6 +97,8 @@ const Skills = () => {
               <h4 className="technology-name">CSS3</h4>
               <p className="technology-description">É uma linguagem que permite que você especifique um elemento ou mais para aplicar regras de estilo.</p>
             </div>
+
+            
 
         </section>
     </div>
