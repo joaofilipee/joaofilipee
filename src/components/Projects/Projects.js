@@ -61,7 +61,7 @@ const Projects = () => {
                 <p className="project-description">Nesse projeto eu utilizei tecnologias/bibliotecas como ReactJS, Typescript, HTML5, CSS3, Javascript (ES6), Context API, Firebase, Git/Github e React Icons. Esse projeto foi um pouco mais completo onde utilizei o Firebase para o cadastro, login e logout de usuários. Também utilizei o Firecloud do Firebase para armazenar os dados do usuário e salvar suas alterações.</p>
               </div>
 
-              <a href="https://stockcontrol-h02vqil52-joaofilipee.vercel.app" target="_blank" className="btn">Ver projeto</a>
+              <a href="https://stockcontrol-theta.vercel.app/" target="_blank" className="btn">Ver projeto</a>
             </li>
         </ul>
 

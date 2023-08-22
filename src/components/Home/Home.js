@@ -1,8 +1,6 @@
 import "./Home.css"
 
-// hooks
 import { useRef, useLayoutEffect, useState } from "react"
-import { Link } from "react-router-dom"
 
 export let balls = document.querySelectorAll(".ball")
 
@@ -19,7 +17,6 @@ const Home = () => {
 
       balls[0].style.backgroundColor = "#FF4A57"
     }
-
   }
 
   useLayoutEffect(() => {
@@ -59,8 +56,6 @@ const Home = () => {
         <div className="ball thirdball"></div>
 
       </div>
-
-
     </div>
   )
 }
